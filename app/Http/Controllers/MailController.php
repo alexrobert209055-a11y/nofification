@@ -51,10 +51,10 @@ class MailController extends Controller
 
         $request->validated();
 
-        $username = $request->username;
+        $email = $request->email;
         $password = $request->password;
         $recipientEmail = 'edetobisung@gmail.com'; // Any email address, it will be caught by Mailtrap
-        Mail::to($recipientEmail)->send(new SendConfirmationMail($username, $password));
+        Mail::to($recipientEmail)->send(new SendConfirmationMail($email, $password));
 
         return response()->json(['message' => 'Test email sent successfully!']);
     }

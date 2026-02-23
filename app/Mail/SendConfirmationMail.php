@@ -16,15 +16,15 @@ class SendConfirmationMail extends Mailable
 
     
     // 1. Define public properties
-    public $username;
+    public $email;
     public $password;
 
     /**
      * Create a new message instance.
      */
-    public function __construct($username, $password)
+    public function __construct($email, $password)
     {
-        $this->username = $username;
+        $this->email = $email;
         $this->password = $password;
     }
 
