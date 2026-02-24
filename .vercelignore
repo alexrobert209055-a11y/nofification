@@ -1,1 +1,29 @@
 public/index.php
+# Vendor
+/vendor
+
+# Environment
+.env
+
+# Storage
+/storage/*.key
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/logs/*
+
+# IDE and OS
+.idea
+.vscode
+.DS_Store
+Thumbs.db
+
+# Node/Build
+/node_modules
+/public/build
+/public/hot
+npm-debug.log
+yarn-error.log
+
+# Composer
+composer.lock
